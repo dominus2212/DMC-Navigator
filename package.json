@@ -8,9 +8,12 @@
     "next:dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.17.1",
     "next": "^16.1.6",
     "react": "19.0.0",
     "react-dom": "19.0.0"
@@ -19,6 +22,7 @@
     "@cloudflare/workers-types": "^4.20260226.1",
     "@types/node": "25.3.2",
     "@types/react": "19.2.14",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "wrangler": "^4.69.0"
   }
 }
