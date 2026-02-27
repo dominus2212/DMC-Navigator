@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "deploy": "opennextjs-cloudflare build && node -e \"const fs=require(\\\"fs\\\"); fs.copyFileSync(\\\".open-next/worker.js\\\", \\\".open-next/worker.mjs\\\");\" && wrangler deploy"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.17.1",

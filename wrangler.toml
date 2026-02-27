@@ -1,21 +1,8 @@
 name = "dmc-navigator"
-compatibility_date = "2026-02-26"
-compatibility_flags = ["nodejs_compa# Cloudflare Pages will manage the build; this file is used for local dev & bindings.
-
-[[d1_databases]]
-binding = "DB"
-database_name = "dmc_navigator_db"
-database_id = "3a6ec73d-92bf-4197-9e5e-7a50ca29d53c"
-
-# (Opcionalno) R2 za PDF i assete:
-# [[r2_buckets]]
-# binding = "ASSETS"
-# bucket_name = "dmc-navigator-assets"
-name = "dmc-navigator"
 compatibility_date = "2026-02-27"
 compatibility_flags = ["nodejs_compat"]
 
-main = ".open-next/worker.js"
+main = ".open-next/worker.mjs"
 
 [assets]
 directory = ".open-next/assets"
@@ -25,4 +12,3 @@ binding = "ASSETS"
 binding = "DB"
 database_name = "dmc_navigator_db"
 database_id = "3a6ec73d-92bf-4197-9e5e-7a50ca29d53c"
-
